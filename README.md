@@ -1,16 +1,43 @@
-# React + Vite
+# Kaaradhya
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A demo storefront for Kaaradhya, "Everyday kurtis, on repeat". It sells cotton short kurtis, long kurtas, shirts, tops and pants: 39 pieces from ₹449 to ₹1,499, with the signature cuts in up to 18 colours.
 
-Currently, two official plugins are available:
+## Run it
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+Build with `npm run build`, then preview with `npm run preview`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## What works
 
-## Expanding the Oxlint configuration
+- **Home:**
+  - Shade-picker hero: the Everyday Kurti in ten colours, a day-of-the-week timer, one-tap add to bag and search.
+  - Promises, "Shop by your day", and best-seller tabs.
+  - The Classic Kurta shade card (18 colours).
+  - "Plan your week" builder with the WEEKLY20 code.
+  - Annotated "the cut" section, customer notes, coupon codes and an Instagram wall.
+- **Shop:**
+  - Category pages, with filters in the URL: fabric, wear-it-to, colour, price.
+  - Sort, and search with suggestions.
+- **Product page:**
+  - Gallery with zoom, every colour of the same cut, size picker and size guide.
+  - Pincode check, reviews, related and recently viewed.
+- **Bag:**
+  - Drawer and full page.
+  - Free shipping progress over ₹799.
+  - Coupons: `EVERYDAY10`, `FIRST15` (₹999+), `WEEKLY20` (₹2,999+).
+- **Checkout:**
+  - Address with pincode autofill, then UPI, card, net banking or COD (₹29).
+  - Order confirmation and order history on this device.
+- **Also:** wishlist, account, help/FAQ, our story, a 404 page and an error page.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+All data is local (`src/data`). The cart, wishlist and orders are saved in localStorage. No real payment is taken. Reviews and customer notes are sample content.
+
+## Stack
+
+- Vite, React 19, React Router 7 and Tailwind CSS v4.
+- Motion, Lenis and Phosphor icons.
+- Schibsted Grotesk and Caveat fonts.
