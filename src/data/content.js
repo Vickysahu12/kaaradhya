@@ -115,13 +115,6 @@ export const testimonials = [
   { name: 'Ishita Bose', city: 'Kolkata', role: 'Bank officer', rating: 5, productId: 'k43', text: 'Beige with maroon pants, exactly like the photo. Ordered on Monday, wore it on Thursday.' },
 ]
 
-export const instagram = {
-  handle: '@kaaradhya.in',
-  tag: '#KaaradhyaOnRepeat',
-  href: 'https://instagram.com',
-  images: ['k21-1', 'k34-1', 'k46-1', 'k39-1', 'k30-1', 'k45-1'],
-}
-
 export const serviceRow = perks
 
 // Review pool used to fill product pages (demo).

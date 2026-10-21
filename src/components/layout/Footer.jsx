@@ -93,21 +93,6 @@ export function Footer() {
         <div className="shell grid grid-cols-2 gap-x-6 gap-y-10 border-t border-paper/12 py-12 sm:grid-cols-4">
           <div className="col-span-2 sm:col-span-1">
             <p className="max-w-[30ch] text-[14px] leading-relaxed text-paper/70">{site.footer.blurb}</p>
-            <ul className="mt-5 flex gap-2">
-              {site.footer.social.map((s) => (
-                <li key={s.label}>
-                  <a
-                    href={s.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={s.label}
-                    className="press grid size-10 place-items-center rounded-full border border-paper/25 transition-[background-color,border-color,color,transform] duration-300 hover:-translate-y-0.5 hover:border-paper hover:bg-paper hover:text-gold-deep"
-                  >
-                    <Icon name={s.icon} size={18} />
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
           {site.footer.columns.map((col) => (
             <div key={col.title}>
@@ -127,7 +112,7 @@ export function Footer() {
 
         <div className="shell flex flex-col gap-4 border-t border-paper/12 py-5 text-[12px] text-paper/60 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {YEAR} {site.name}. Demo storefront: prices, reviews and orders are sample data.
+            © {YEAR} {site.name}. All rights reserved.
           </p>
           <ul className="flex flex-wrap gap-2" aria-label="Payment methods">
             {PAYMENTS.map((p) => (

@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import { testimonials, offers, instagram } from '../../data/content'
+import { testimonials, offers } from '../../data/content'
 import { getProductSync } from '../../services/catalog'
 import { useReveal } from '../../hooks/useReveal'
 import { Img } from '../../components/ui/Img'
@@ -11,7 +11,7 @@ const tilt = ['-rotate-[1.2deg]', 'rotate-[0.8deg]', '-rotate-[0.5deg]', 'rotate
 
 /**
  * The close. Notes from customers (sample content), pinned like planner pages that straighten
- * when you point at them; the three codes; and the #KaaradhyaOnRepeat wall.
+ * when you point at them; and the three codes.
  */
 export function Notes() {
   const ref = useReveal()
@@ -46,30 +46,12 @@ export function Notes() {
           )
         })}
       </ul>
-      <p className="shell mt-2 text-[12px] text-ink-soft">Sample customer notes for this demo store.</p>
 
       <ul className="shell mt-16 grid gap-3 sm:grid-cols-3">
         {offers.map((o) => (
           <li key={o.code} className="flex items-center justify-between gap-3 rounded-[16px] border border-dashed border-gold/40 bg-paper px-5 py-4">
             <p className="text-[15px] font-semibold text-ink">{o.title}</p>
             <CopyCode code={o.code} />
-          </li>
-        ))}
-      </ul>
-
-      <div className="shell mt-20 flex flex-col items-center text-center">
-        <h2 className="display text-[30px] text-ink sm:text-[42px]">{instagram.tag}</h2>
-        <p className="mt-3 text-[15.5px] text-ink-soft">Tag {instagram.handle} in your kurti of the day.</p>
-      </div>
-      <ul className="shell mt-8 grid grid-cols-3 gap-2 sm:gap-3 lg:grid-cols-6">
-        {instagram.images.map((id, i) => (
-          <li key={id}>
-            <a href={instagram.href} target="_blank" rel="noreferrer" aria-label={`Instagram post ${i + 1}`} className="group relative block overflow-hidden rounded-[16px]" data-reveal-frame style={{ '--reveal-delay': `${i * 60}ms` }}>
-              <Img id={id} alt="" sizes="(min-width: 1024px) 16vw, 33vw" className="aspect-square" position="50% 18%" imgClassName="transition-transform duration-[1200ms] ease-[var(--ease-out)] group-hover:scale-110" />
-              <span className="absolute inset-0 grid place-items-center bg-gold/0 transition-colors duration-300 group-hover:bg-gold/55">
-                <Icon name="instagram" size={28} className="scale-75 text-paper opacity-0 transition-[opacity,transform] duration-300 ease-[var(--ease-out)] group-hover:scale-100 group-hover:opacity-100" />
-              </span>
-            </a>
           </li>
         ))}
       </ul>
