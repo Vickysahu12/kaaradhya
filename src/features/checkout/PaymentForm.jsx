@@ -91,7 +91,7 @@ export function PaymentForm({ method, setMethod, fields, setFields, error }) {
                           aria-pressed={fields.bank === b}
                           className={cn(
                             'press border px-3 py-2.5 text-left text-[13px] transition-colors',
-                            fields.bank === b ? 'border-gold bg-gold text-paper' : 'border-line-strong hover:border-gold',
+                            fields.bank === b ? 'border-gold bg-gold text-plum' : 'border-line-strong hover:border-gold',
                           )}
                         >
                           {b}

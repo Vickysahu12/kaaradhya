@@ -27,9 +27,9 @@ function MenuTile({ item, index, onNavigate }) {
         <span className="block overflow-hidden rounded-[14px]">
           <Img id={item.image} alt="" sizes="180px" className="aspect-[3/4] bg-studio" position="50% 25%" imgClassName="transition-transform duration-700 ease-out group-hover:scale-[1.06]" />
         </span>
-        <span className="mt-3 flex items-center gap-1.5 text-[15px] font-semibold text-ink group-hover:text-gold">
+        <span className="mt-3 flex items-center gap-1.5 text-[15px] font-semibold text-ink group-hover:text-gold-deep">
           {item.label}
-          <Icon name="arrow" size={13} weight="bold" className="-translate-x-1 text-gold opacity-0 transition-[opacity,transform] duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
+          <Icon name="arrow" size={13} weight="bold" className="-translate-x-1 text-gold-deep opacity-0 transition-[opacity,transform] duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
         </span>
         <span className="mt-0.5 block text-[13px] text-ink-soft">{item.desc}</span>
       </Link>
@@ -158,7 +158,7 @@ export function MegaNav() {
               <Link
                 to={l.to}
                 aria-current={isActive(l.to) ? 'page' : undefined}
-                className={cn('relative isolate flex h-10 items-center gap-1.5 px-4 text-[14.5px] font-medium', l.accent ? 'text-gold' : 'text-ink')}
+                className={cn('relative isolate flex h-10 items-center gap-1.5 px-4 text-[14.5px] font-medium', l.accent ? 'text-gold-deep' : 'text-ink')}
               >
                 {pill(l.label)}
                 {l.label}
@@ -194,7 +194,7 @@ export function MegaNav() {
                       className="grid grid-cols-[1fr_280px] gap-8 p-6"
                     >
                       <div>
-                        <p className="hand text-[24px] text-gold">{menu.columns[0].title}</p>
+                        <p className="hand text-[24px] text-gold-deep">{menu.columns[0].title}</p>
                         <ul className="mt-4 grid grid-cols-5 gap-4">
                           {menu.columns
                             .flatMap((c) => c.items)
@@ -217,7 +217,7 @@ export function MegaNav() {
                   </AnimatePresence>
                   <div className="flex items-center justify-between border-t border-line bg-studio/60 px-6 py-3 text-[13px] text-ink-soft">
                     <span className="flex items-center gap-2">
-                      <Icon name="truck" size={17} className="text-gold" /> Free shipping above ₹799. Easy 7-day returns.
+                      <Icon name="truck" size={17} className="text-gold-deep" /> Free shipping above ₹799. Easy 7-day returns.
                     </span>
                     <Link to={menu.to} onClick={closeNow} className="link-under text-[13px] font-semibold text-ink">
                       View all

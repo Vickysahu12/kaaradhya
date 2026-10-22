@@ -13,7 +13,7 @@ export function Accordion({ title, children, defaultOpen = false }) {
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-controls={id}
-        className="group flex w-full items-center justify-between py-4 text-left text-[16px] font-semibold transition-colors hover:text-gold"
+        className="group flex w-full items-center justify-between py-4 text-left text-[16px] font-semibold transition-colors hover:text-gold-deep"
       >
         {title}
         <span className="relative grid size-8 place-items-center rounded-full bg-studio transition-colors group-hover:bg-brass" aria-hidden="true">

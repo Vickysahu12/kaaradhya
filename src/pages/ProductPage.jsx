@@ -162,7 +162,7 @@ function ProductView({ product }) {
           </div>
 
           <a href="#reviews" className="mt-3 inline-flex items-center gap-2 text-[14px]">
-            <span className="flex gap-0.5 text-gold" aria-hidden="true">
+            <span className="flex gap-0.5 text-gold-deep" aria-hidden="true">
               {Array.from({ length: 5 }, (_, i) => (
                 <Icon key={i} name="star" size={15} weight={i < Math.round(product.rating) ? 'fill' : 'regular'} />
               ))}
@@ -180,13 +180,13 @@ function ProductView({ product }) {
               {mrp && (
                 <>
                   <span className="text-[17px] text-ink-soft tabular-nums line-through">{formatPrice(mrp)}</span>
-                  <span className="rounded-full bg-gold px-2.5 py-1 text-[12px] font-semibold text-paper">{discount}% off</span>
+                  <span className="rounded-full bg-gold px-2.5 py-1 text-[12px] font-semibold text-plum">{discount}% off</span>
                 </>
               )}
             </p>
             <p className="mt-1 text-[13px] text-ink-soft">Inclusive of all taxes. Free shipping above {formatPrice(site.freeShippingOver)}.</p>
             <div className="mt-5 flex flex-wrap items-center gap-3 rounded-full border border-dashed border-gold/40 bg-paper py-2 pr-2 pl-4 text-[14px]">
-              <Icon name="tag" size={18} className="text-gold" />
+              <Icon name="tag" size={18} className="text-gold-deep" />
               <span className="flex-1 text-[14.5px] font-medium text-ink">Extra 10% off with</span>
               <CopyCode code="EVERYDAY10" />
             </div>
@@ -225,7 +225,7 @@ function ProductView({ product }) {
                   Size{size && <span className="ml-2 text-ink">{size}</span>}
                 </legend>
                 {!freeSize && (
-                  <button type="button" onClick={() => setChartOpen(true)} className="caps link-under flex items-center gap-1.5 text-[10px] text-gold">
+                  <button type="button" onClick={() => setChartOpen(true)} className="caps link-under flex items-center gap-1.5 text-[10px] text-gold-deep">
                     <Icon name="ruler" size={16} /> Size guide
                   </button>
                 )}
@@ -242,7 +242,7 @@ function ProductView({ product }) {
                     }}
                     className={cn(
                       'press h-12 min-w-14 px-4 ring-1 text-[14px] font-medium transition-[background-color,color,box-shadow] duration-200',
-                      size === s ? 'bg-gold text-paper ring-gold shadow-float' : 'bg-paper text-ink ring-line hover:ring-gold',
+                      size === s ? 'bg-gold text-plum ring-gold shadow-float' : 'bg-paper text-ink ring-line hover:ring-gold',
                     )}
                   >
                     {s}
@@ -257,7 +257,7 @@ function ProductView({ product }) {
             {freeSize && (
               <Toggle on={stitch} onChange={setStitch} label="Blouse stitching">
                 <span className="flex items-center gap-1.5 text-[15px] font-medium">
-                  <Icon name="scissors" size={18} className="text-gold" /> Get the blouse stitched, +{formatPrice(site.stitchFee)}
+                  <Icon name="scissors" size={18} className="text-gold-deep" /> Get the blouse stitched, +{formatPrice(site.stitchFee)}
                 </span>
                 <span className="block text-[13px] text-ink-soft">We will WhatsApp you for measurements after you order. Fall and pico are always free.</span>
               </Toggle>
@@ -290,7 +290,7 @@ function ProductView({ product }) {
               ['truck', 'Ships in 48 hrs'],
             ].map(([icon, label]) => (
               <li key={label} className="group border border-line bg-paper px-2 py-4">
-                <Icon name={icon} size={24} className="mx-auto text-gold transition-transform duration-500 ease-[var(--ease-spring)] group-hover:-rotate-12 group-hover:scale-110" />
+                <Icon name={icon} size={24} className="mx-auto text-gold-deep transition-transform duration-500 ease-[var(--ease-spring)] group-hover:-rotate-12 group-hover:scale-110" />
                 <span className="mt-1.5 block leading-tight font-medium">{label}</span>
               </li>
             ))}

@@ -23,8 +23,8 @@ export function CopyCode({ code, light, className }) {
       aria-label={copied ? `${code} copied` : `Copy code ${code}`}
       className={cn(
         'press group inline-flex h-9 items-center gap-2 rounded-full border-[1.5px] border-dashed px-3.5 text-[13px] font-bold tracking-[0.06em] transition-colors',
-        light ? 'border-champagne text-champagne hover:bg-champagne hover:text-plum' : 'border-gold text-gold hover:bg-gold hover:text-paper',
-        copied && (light ? 'bg-champagne text-plum' : 'bg-gold text-paper'),
+        light ? 'border-champagne text-champagne hover:bg-champagne hover:text-plum' : 'border-gold text-gold-deep hover:bg-gold hover:text-plum',
+        copied && (light ? 'bg-champagne text-plum' : 'bg-gold text-plum'),
         className,
       )}
     >

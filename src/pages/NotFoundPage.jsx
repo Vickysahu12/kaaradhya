@@ -6,7 +6,7 @@ export function NotFoundPage() {
   useDocumentTitle('Page not found')
   return (
     <div className="shell flex flex-col items-center py-24 text-center">
-      <span className="grid size-20 place-items-center rounded-full bg-champagne text-gold">
+      <span className="grid size-20 place-items-center rounded-full bg-champagne text-gold-deep">
         <Icon name="sun" size={40} weight="fill" className="spin-slow" />
       </span>
       <h1 className="display mt-6 text-[44px] text-ink sm:text-[60px]">This page wandered off</h1>

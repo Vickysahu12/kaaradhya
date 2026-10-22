@@ -60,7 +60,7 @@ export function ToastProvider({ children }) {
                     toast.action.onClick()
                     dismiss()
                   }}
-                  className="press shrink-0 rounded-full bg-gold px-4 py-2 text-[13px] font-semibold text-paper"
+                  className="press shrink-0 rounded-full bg-gold px-4 py-2 text-[13px] font-semibold text-plum"
                 >
                   {toast.action.label}
                 </button>

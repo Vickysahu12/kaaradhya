@@ -17,7 +17,7 @@ function Utility({ icon, label, count, bumpKey, onClick, to, className, ...props
     <Tag
       {...(to ? { to } : { type: 'button', onClick })}
       aria-label={count ? `${label}, ${count} items` : label}
-      className={cn('group press relative flex h-12 min-w-11 flex-col items-center justify-center gap-0.5 px-1.5 text-ink transition-colors duration-200 hover:text-gold', className)}
+      className={cn('group press relative flex h-12 min-w-11 flex-col items-center justify-center gap-0.5 px-1.5 text-ink transition-colors duration-200 hover:text-gold-deep', className)}
       {...props}
     >
       <Icon name={icon} size={22} className="transition-transform duration-300 ease-[var(--ease-spring)] group-hover:-translate-y-0.5" />
@@ -26,7 +26,7 @@ function Utility({ icon, label, count, bumpKey, onClick, to, className, ...props
         <span
           key={bumpKey}
           className={cn(
-            'absolute top-0.5 right-0 grid h-[17px] min-w-[17px] place-items-center rounded-full bg-gold px-1 text-[10px] font-semibold text-paper tabular-nums ring-2 ring-paper',
+            'absolute top-0.5 right-0 grid h-[17px] min-w-[17px] place-items-center rounded-full bg-gold px-1 text-[10px] font-semibold text-plum tabular-nums ring-2 ring-paper',
             bumpKey ? 'anim-bump' : '',
           )}
         >

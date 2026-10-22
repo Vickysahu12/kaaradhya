@@ -22,7 +22,7 @@ export function AccountPage() {
 
       {orders.length === 0 ? (
         <div className="mt-14 flex flex-col items-center text-center">
-          <span className="grid size-20 place-items-center rounded-full bg-paper text-gold"><Icon name="package" size={34} /></span>
+          <span className="grid size-20 place-items-center rounded-full bg-paper text-gold-deep"><Icon name="package" size={34} /></span>
           <p className="display mt-5 text-[30px] text-ink">No orders yet</p>
           <p className="mt-2 text-[14px] text-ink-soft">When you place an order it shows up here with its delivery status.</p>
           <Button to="/shop" className="mt-7">
@@ -50,7 +50,7 @@ export function AccountPage() {
                     {STAGES.map((s, i) => (
                       <li key={s} className="flex flex-1 items-center last:flex-none">
                         <span className="flex flex-col items-center gap-1.5">
-                          <span className={`grid size-6 place-items-center rounded-full ${i <= stage ? 'bg-gold text-paper' : 'border border-line-strong bg-paper'}`}>
+                          <span className={`grid size-6 place-items-center rounded-full ${i <= stage ? 'bg-gold text-plum' : 'border border-line-strong bg-paper'}`}>
                             {i <= stage && <Icon name="check" size={12} weight="bold" />}
                           </span>
                           <span className={`text-[11px] ${i <= stage ? 'text-ink' : 'text-ink-soft'}`}>{s}</span>

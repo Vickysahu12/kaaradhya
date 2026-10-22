@@ -11,7 +11,7 @@
 
   Kaaradhya takes its identity from the logo: a gold paisley crest and an inscriptional
   serif wordmark on ivory. The page is warm ivory, the photographs sit on their own pale
-  studio ground (mist) in soft-cornered frames, and antique gold does the work: actions,
+  studio ground (mist) in soft-cornered frames, and Mustard Gold (#D4A017) does the work: actions,
   selection, the one italic word in a headline. Brass (the crest's lighter gold) is kept for
   ornament and ratings. Cinzel, cut from the same Roman capitals as the wordmark, sets the
   headlines; EB Garamond italic is the accent voice; Mulish carries everything you read.
@@ -23,16 +23,16 @@
   --color-studio: #f8f4ec;
   --color-mist: #f0ece4;
   --color-paper: #fffdf8;
-  --color-gold: #8a6a2e;
-  --color-gold-deep: #66501f;
-  --color-champagne: #f1e7d3;
-  --color-brass: #b8924a;
-  --color-brass-deep: #96753a;
+  --color-gold: #d4a017; /* Mustard Gold, the brand colour: fills, rules, icons; dark text on it */
+  --color-gold-deep: #8c6a0b; /* the same mustard, deepened so small text reads on cream */
+  --color-champagne: #f8ecc7;
+  --color-brass: #e0b43a;
+  --color-brass-deep: #b8870f;
   --color-plum: #2a2219;
   --color-ink: #26201a;
   --color-ink-soft: #6e655a;
-  --color-line: rgb(102 80 31 / 0.14);
-  --color-line-strong: rgb(102 80 31 / 0.28);
+  --color-line: rgb(140 106 11 / 0.14);
+  --color-line-strong: rgb(140 106 11 / 0.28);
   --color-success: #3b6e47;
   --color-danger: #b0392b;
 
@@ -75,7 +75,7 @@
 
   ::selection {
     background: var(--color-gold);
-    color: var(--color-paper);
+    color: var(--color-plum);
   }
 
   :focus-visible {
@@ -192,7 +192,7 @@
     --btn-bg: var(--color-ink);
     --btn-fg: var(--color-paper);
     --btn-fill: var(--color-gold);
-    --btn-fill-fg: var(--color-paper);
+    --btn-fill-fg: var(--color-plum);
     --btn-ring: transparent;
     position: relative;
     isolation: isolate;

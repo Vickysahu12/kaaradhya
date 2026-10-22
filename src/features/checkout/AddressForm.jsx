@@ -154,7 +154,7 @@ export function AddressForm({ initial, onSubmit }) {
                 aria-pressed={(v.type ?? 'Home') === t}
                 className={cn(
                   'press flex-1 border text-[14px] transition-colors',
-                  (v.type ?? 'Home') === t ? 'border-gold bg-gold text-paper' : 'border-line-strong hover:border-gold',
+                  (v.type ?? 'Home') === t ? 'border-gold bg-gold text-plum' : 'border-line-strong hover:border-gold',
                 )}
               >
                 {t}

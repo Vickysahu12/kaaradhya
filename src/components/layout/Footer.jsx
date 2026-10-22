@@ -49,7 +49,7 @@ function Newsletter() {
           aria-invalid={Boolean(error)}
           className="h-11 min-w-0 flex-1 bg-transparent px-1 text-[16px] text-paper outline-none placeholder:text-paper/50"
         />
-        <button type="submit" disabled={state === 'sending'} className="btn h-11 px-5 text-[14px] [--btn-bg:var(--color-paper)] [--btn-fg:var(--color-plum)] [--btn-fill:var(--color-gold)] [--btn-fill-fg:var(--color-paper)]">
+        <button type="submit" disabled={state === 'sending'} className="btn h-11 px-5 text-[14px] [--btn-bg:var(--color-paper)] [--btn-fg:var(--color-plum)] [--btn-fill:var(--color-gold)] [--btn-fill-fg:var(--color-plum)]">
           {state === 'sending' ? 'Joining' : 'Join'}
           <Icon name="arrow" size={14} weight="bold" className="btn-arrow" />
         </button>
@@ -69,7 +69,7 @@ export function Footer() {
       <ul hidden={pathname === '/'} className="shell grid grid-cols-2 gap-x-4 gap-y-8 border-y border-line py-10 lg:grid-cols-4">
         {perks.map((s) => (
           <li key={s.title} className="group flex flex-col items-center text-center">
-            <span className="grid size-14 place-items-center text-gold transition-transform duration-500 ease-[var(--ease-spring)] group-hover:-translate-y-1 group-hover:-rotate-6">
+            <span className="grid size-14 place-items-center text-gold-deep transition-transform duration-500 ease-[var(--ease-spring)] group-hover:-translate-y-1 group-hover:-rotate-6">
               <Icon name={s.icon} size={24} />
             </span>
             <span className="caps mt-2 text-[10px] text-ink">{s.title}</span>

@@ -20,7 +20,7 @@ export function AboutPage() {
     <div ref={ref}>
       <section className="shell grid items-center gap-12 pt-12 lg:grid-cols-[1.1fr_1fr] lg:pt-20">
         <div>
-          <p className="hand text-[28px] text-gold">our story</p>
+          <p className="hand text-[28px] text-gold-deep">our story</p>
           <h1 className="display mt-2 text-[46px] leading-[0.98] text-ink sm:text-[72px]">
             Made for the
             <br />
@@ -48,7 +48,7 @@ export function AboutPage() {
               </div>
               <div data-reveal>
                 <h2 className="display text-[34px] text-ink sm:text-[38px]">
-                  {c.title} <span className="hand text-[1.12em] normal-case text-gold">{c.hand}</span>
+                  {c.title} <span className="hand text-[1.12em] normal-case text-gold-deep">{c.hand}</span>
                 </h2>
                 <p className="mt-5 max-w-[48ch] text-[16.5px] leading-relaxed text-ink-soft">{c.body}</p>
               </div>
@@ -61,7 +61,7 @@ export function AboutPage() {
         <ul className="grid gap-6 border-t border-line pt-10 sm:grid-cols-2 lg:grid-cols-4">
           {perks.map((p) => (
             <li key={p.title} className="flex gap-4">
-              <span className="grid size-12 shrink-0 place-items-center rounded-full bg-champagne text-gold">
+              <span className="grid size-12 shrink-0 place-items-center rounded-full bg-champagne text-gold-deep">
                 <Icon name={p.icon} size={22} />
               </span>
               <span>

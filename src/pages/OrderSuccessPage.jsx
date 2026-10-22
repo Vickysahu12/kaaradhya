@@ -37,14 +37,14 @@ export function OrderSuccessPage() {
       <div className="anim-fade-up mt-10 overflow-hidden rounded-[12px] bg-paper" style={{ '--delay': '500ms' }}>
         <div className="grid gap-5 border-b border-line p-5 sm:grid-cols-3 sm:p-6">
           <div className="flex gap-3">
-            <Icon name="truck" size={22} className="shrink-0 text-gold" />
+            <Icon name="truck" size={22} className="shrink-0 text-gold-deep" />
             <div>
               <p className="text-[12px] text-ink-soft">Estimated delivery</p>
               <p className="text-[14px] font-medium">{eta}</p>
             </div>
           </div>
           <div className="flex gap-3">
-            <Icon name="pin" size={22} className="shrink-0 text-gold" />
+            <Icon name="pin" size={22} className="shrink-0 text-gold-deep" />
             <div>
               <p className="text-[12px] text-ink-soft">Shipping to</p>
               <p className="text-[14px] font-medium">
@@ -53,7 +53,7 @@ export function OrderSuccessPage() {
             </div>
           </div>
           <div className="flex gap-3">
-            <Icon name={order.payment === 'cod' ? 'cash' : 'card'} size={22} className="shrink-0 text-gold" />
+            <Icon name={order.payment === 'cod' ? 'cash' : 'card'} size={22} className="shrink-0 text-gold-deep" />
             <div>
               <p className="text-[12px] text-ink-soft">Payment</p>
               <p className="text-[14px] font-medium">{PAY_LABEL[order.payment]}</p>

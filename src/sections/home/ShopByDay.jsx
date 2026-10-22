@@ -28,10 +28,10 @@ export function ShopByDay() {
                 </span>
               </span>
               <span className="mt-4 flex items-baseline justify-between gap-3">
-                <span className="text-[18px] font-semibold text-ink transition-colors group-hover:text-gold">{c.label}</span>
+                <span className="text-[18px] font-semibold text-ink transition-colors group-hover:text-gold-deep">{c.label}</span>
                 <span className="text-[13px] text-ink-soft tabular-nums">{count(c)} styles</span>
               </span>
-              <span className="hand mt-1 block h-7 text-[22px] text-gold transition-[opacity,transform,clip-path] duration-500 ease-[var(--ease-out)] [clip-path:inset(0_100%_0_0)] group-hover:[clip-path:inset(0_0_0_0)] max-sm:[clip-path:none]">
+              <span className="hand mt-1 block h-7 text-[22px] text-gold-deep transition-[opacity,transform,clip-path] duration-500 ease-[var(--ease-out)] [clip-path:inset(0_100%_0_0)] group-hover:[clip-path:inset(0_0_0_0)] max-sm:[clip-path:none]">
                 {c.note}
               </span>
             </Link>

@@ -33,7 +33,7 @@ function Check({ checked, onChange, label, count, swatch }) {
       <span
         className={cn(
           'grid size-[18px] shrink-0 place-items-center border transition-colors duration-150 peer-focus-visible:ring-2 peer-focus-visible:ring-bronze',
-          checked ? 'border-gold bg-gold text-paper' : 'border-line-strong text-transparent group-hover:border-gold',
+          checked ? 'border-gold bg-gold text-plum' : 'border-line-strong text-transparent group-hover:border-gold',
         )}
         aria-hidden="true"
       >

@@ -5,11 +5,11 @@ import { cn } from '../../lib/cn'
 // Each variant sets its resting colours and the colour that sweeps in from the left on hover.
 const variants = {
   primary: '',
-  gold: '[--btn-bg:var(--color-gold)] [--btn-fg:var(--color-paper)] [--btn-fill:var(--color-ink)] [--btn-fill-fg:var(--color-paper)]',
-  brass: '[--btn-bg:var(--color-brass)] [--btn-fg:var(--color-paper)] [--btn-fill:var(--color-brass-deep)] [--btn-fill-fg:var(--color-paper)]',
-  light: '[--btn-bg:var(--color-paper)] [--btn-fg:var(--color-ink)] [--btn-fill:var(--color-gold)] [--btn-fill-fg:var(--color-paper)]',
+  gold: '[--btn-bg:var(--color-gold)] [--btn-fg:var(--color-plum)] [--btn-fill:var(--color-ink)] [--btn-fill-fg:var(--color-paper)]',
+  brass: '[--btn-bg:var(--color-brass)] [--btn-fg:var(--color-plum)] [--btn-fill:var(--color-brass-deep)] [--btn-fill-fg:var(--color-plum)]',
+  light: '[--btn-bg:var(--color-paper)] [--btn-fg:var(--color-ink)] [--btn-fill:var(--color-gold)] [--btn-fill-fg:var(--color-plum)]',
   outline: '[--btn-bg:transparent] [--btn-fg:var(--color-ink)] [--btn-ring:var(--color-line-strong)] [--btn-fill:var(--color-ink)] [--btn-fill-fg:var(--color-paper)]',
-  'outline-light': '[--btn-bg:transparent] [--btn-fg:var(--color-paper)] [--btn-ring:rgb(252_246_244/0.8)] [--btn-fill:var(--color-paper)] [--btn-fill-fg:var(--color-gold)]',
+  'outline-light': '[--btn-bg:transparent] [--btn-fg:var(--color-paper)] [--btn-ring:rgb(252_246_244/0.8)] [--btn-fill:var(--color-paper)] [--btn-fill-fg:var(--color-gold-deep)]',
   ghost: '[--btn-bg:var(--color-paper)] [--btn-fg:var(--color-ink)] [--btn-ring:var(--color-line)] [--btn-fill:var(--color-champagne)] [--btn-fill-fg:var(--color-gold-deep)]',
 }
 

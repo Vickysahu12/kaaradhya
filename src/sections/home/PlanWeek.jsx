@@ -52,10 +52,10 @@ export function PlanWeek() {
         <div className="grid gap-10 p-5 sm:p-8 lg:grid-cols-[minmax(0,4fr)_minmax(0,8fr)] lg:gap-14 lg:p-12">
           <div>
             <p className="flex items-center gap-2 text-[13px] font-semibold text-ink-soft">
-              <Icon name="calendar" size={18} className="text-gold" /> The weekly planner
+              <Icon name="calendar" size={18} className="text-gold-deep" /> The weekly planner
             </p>
             <h2 id="week-title" className="display mt-4 text-[34px] text-ink sm:text-[38px]">
-              Plan your <span className="hand text-[1.12em] normal-case text-gold">week</span>
+              Plan your <span className="hand text-[1.12em] normal-case text-gold-deep">week</span>
             </h2>
             <p className="mt-4 max-w-[40ch] text-[15.5px] leading-relaxed text-ink-soft">Pick a kurti for every day. Plan five or more and the week is 20% off.</p>
 
@@ -66,7 +66,7 @@ export function PlanWeek() {
                   {formatPrice(ready ? Math.round(total * 0.8) : total)}
                 </span>
               </p>
-              {ready && <p className="mt-1 text-right text-[13px] text-gold">{formatPrice(total)} before {planner.code}</p>}
+              {ready && <p className="mt-1 text-right text-[13px] text-gold-deep">{formatPrice(total)} before {planner.code}</p>}
               <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-mist">
                 <span className="block h-full origin-left rounded-full bg-gold transition-transform duration-500 ease-[var(--ease-out)]" style={{ transform: `scaleX(${filled.length / planner.days.length})` }} />
               </div>
@@ -96,7 +96,7 @@ export function PlanWeek() {
                 const p = week[i] && products.find((x) => x.id === week[i])
                 return (
                   <li key={d}>
-                    <p className="hand text-[24px] text-gold">{d}</p>
+                    <p className="hand text-[24px] text-gold-deep">{d}</p>
                     <div className="relative mt-1 aspect-[3/4] overflow-hidden rounded-[14px] border-[1.5px] border-dashed border-gold/35 bg-studio/60">
                       <AnimatePresence>
                         {p ? (

@@ -14,7 +14,7 @@ import { cn } from '../../lib/cn'
 /** A small "added" tick that pops on the photo when a piece goes into the bag. */
 export function StampMark({ className }) {
   return (
-    <span aria-hidden="true" className={cn('anim-stamp pointer-events-none absolute grid place-items-center rounded-full bg-gold text-paper shadow-float', className)}>
+    <span aria-hidden="true" className={cn('anim-stamp pointer-events-none absolute grid place-items-center rounded-full bg-gold text-plum shadow-float', className)}>
       <Icon name="check" size={26} weight="bold" />
     </span>
   )
@@ -81,7 +81,7 @@ export function ProductCard({ product, sizes = '(min-width: 1024px) 23vw, 50vw',
           <span
             className={cn(
               'pointer-events-none absolute top-3 left-3 rounded-full px-2.5 py-1 text-[11.5px] font-semibold',
-              discount > 0 ? 'bg-gold text-paper' : 'bg-paper/95 text-ink',
+              discount > 0 ? 'bg-gold text-plum' : 'bg-paper/95 text-ink',
             )}
           >
             {discount > 0 ? `${discount}% off` : product.badge ?? 'New'}
@@ -106,7 +106,7 @@ export function ProductCard({ product, sizes = '(min-width: 1024px) 23vw, 50vw',
                   key={s}
                   type="button"
                   onClick={() => quickAdd(s)}
-                  className="anim-fade-up h-9 rounded-full text-[12px] font-semibold text-ink transition-colors hover:bg-gold hover:text-paper"
+                  className="anim-fade-up h-9 rounded-full text-[12px] font-semibold text-ink transition-colors hover:bg-gold hover:text-plum"
                   style={{ '--delay': `${i * 28}ms` }}
                   aria-label={`Add ${shown.name}, size ${s}, to bag`}
                 >
@@ -140,7 +140,7 @@ export function ProductCard({ product, sizes = '(min-width: 1024px) 23vw, 50vw',
 
       <div className="px-0.5 pt-3">
         <Link to={`/product/${shown.slug}`} className="block">
-          <h3 className="line-clamp-1 text-[15px] font-semibold text-ink transition-colors duration-200 group-hover:text-gold">{shown.name}</h3>
+          <h3 className="line-clamp-1 text-[15px] font-semibold text-ink transition-colors duration-200 group-hover:text-gold-deep">{shown.name}</h3>
         </Link>
         <p className="mt-0.5 flex flex-wrap items-baseline gap-x-2 text-[14.5px]">
           <span className="font-medium tabular-nums text-ink">{formatPrice(shown.price)}</span>
@@ -166,7 +166,7 @@ export function ProductCard({ product, sizes = '(min-width: 1024px) 23vw, 50vw',
             ))}
             {extra > 0 && (
               <li>
-                <Link to={`/product/${product.slug}`} className="text-[12px] font-medium text-ink-soft hover:text-gold">
+                <Link to={`/product/${product.slug}`} className="text-[12px] font-medium text-ink-soft hover:text-gold-deep">
                   +{extra}
                 </Link>
               </li>

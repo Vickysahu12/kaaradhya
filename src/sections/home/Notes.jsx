@@ -35,7 +35,7 @@ export function Notes() {
                     <Img id={p.images[0]} alt="" sizes="48px" className="h-16 w-12" position="50% 15%" imgClassName="transition-transform duration-500 group-hover:scale-110" />
                   </Link>
                   <span className="min-w-0">
-                    <span className="hand block text-[22px] text-gold">{t.name}</span>
+                    <span className="hand block text-[22px] text-gold-deep">{t.name}</span>
                     <span className="block text-[12.5px] text-ink-soft">
                       {t.role}, {t.city}
                     </span>

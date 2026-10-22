@@ -54,7 +54,7 @@ export function HelpPage() {
           ['package', 'Track order', 'My orders', '/account'],
         ].map(([icon, title, body, href]) => (
           <a key={title} href={href} className="group border border-line bg-paper p-5 transition-colors hover:border-gold/40 hover:bg-champagne">
-            <span className="grid size-12 place-items-center rounded-full bg-paper text-gold transition-transform duration-500 ease-[var(--ease-spring)] group-hover:-rotate-12 group-hover:scale-110"><Icon name={icon} size={24} /></span>
+            <span className="grid size-12 place-items-center rounded-full bg-paper text-gold-deep transition-transform duration-500 ease-[var(--ease-spring)] group-hover:-rotate-12 group-hover:scale-110"><Icon name={icon} size={24} /></span>
             <p className="mt-3 text-[17px] font-semibold text-ink">{title}</p>
             <p className="text-[13px] text-ink-soft group-hover:text-ink">{body}</p>
           </a>

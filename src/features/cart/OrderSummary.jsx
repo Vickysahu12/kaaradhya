@@ -43,7 +43,7 @@ function CouponBox() {
   return (
     <form onSubmit={apply}>
       <label htmlFor="coupon" className="flex items-center gap-2 text-[14px]">
-        <Icon name="tag" size={17} className="text-gold" /> Apply coupon
+        <Icon name="tag" size={17} className="text-gold-deep" /> Apply coupon
       </label>
       <div key={shakeKey} className={cn('mt-2.5 flex gap-2', shakeKey > 0 && 'anim-shake')}>
         <input

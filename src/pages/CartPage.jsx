@@ -41,7 +41,7 @@ export function CartPage() {
   if (cart.items.length === 0) {
     return (
       <div className="shell flex flex-col items-center py-24 text-center">
-        <span className="grid size-20 place-items-center rounded-full bg-paper text-gold">
+        <span className="grid size-20 place-items-center rounded-full bg-paper text-gold-deep">
           <Icon name="bag" size={34} />
         </span>
         <h1 className="display mt-5 text-[40px] text-ink">Your bag is empty</h1>
@@ -84,7 +84,7 @@ export function CartPage() {
                   <div className="flex items-start justify-between gap-4">
                     <div className="min-w-0">
                       <p className="text-[12px] text-ink-soft">{line.product.fabric}</p>
-                      <Link to={`/product/${line.product.slug}`} className="mt-1 block text-[17px] leading-snug font-semibold hover:text-gold">
+                      <Link to={`/product/${line.product.slug}`} className="mt-1 block text-[17px] leading-snug font-semibold hover:text-gold-deep">
                         {line.product.name}
                       </Link>
                       <p className="mt-1 text-[13px] text-ink-soft">Size {line.variant}</p>

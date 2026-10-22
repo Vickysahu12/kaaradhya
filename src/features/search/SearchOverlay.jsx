@@ -150,7 +150,7 @@ function SearchPanel({ open, onClose }) {
                       <li key={p.id} className="anim-fade-up" style={{ '--delay': `${i * 35}ms` }}>
                         <Link to={`/product/${p.slug}`} onClick={close} className="group block">
                           <Img id={p.images[0]} alt="" sizes="140px" className="aspect-[3/4] rounded-[12px]" position="50% 25%" imgClassName="transition-transform duration-700 group-hover:scale-105" />
-                          <span className="mt-2 line-clamp-2 block text-[12px] leading-snug group-hover:text-gold">{p.name}</span>
+                          <span className="mt-2 line-clamp-2 block text-[12px] leading-snug group-hover:text-gold-deep">{p.name}</span>
                           <span className="block text-[12px] tabular-nums">{formatPrice(p.price)}</span>
                         </Link>
                       </li>

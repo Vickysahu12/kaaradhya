@@ -31,7 +31,7 @@ export function PincodeCheck() {
   return (
     <div>
       <p className="flex items-center gap-2 text-[15px] font-semibold">
-        <Icon name="pin" size={18} weight="fill" className="text-gold" /> Check delivery
+        <Icon name="pin" size={18} weight="fill" className="text-gold-deep" /> Check delivery
       </p>
       <form onSubmit={onSubmit} className="mt-2.5 flex gap-2">
         <label className="sr-only" htmlFor="pincode">

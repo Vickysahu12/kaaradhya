@@ -16,8 +16,8 @@ export function CheckoutSteps({ current }) {
             <span
               className={cn(
                 'grid size-6 place-items-center rounded-full border text-[11px] transition-colors duration-300',
-                done && 'border-gold bg-gold text-paper',
-                active && 'border-gold bg-gold text-paper',
+                done && 'border-gold bg-gold text-plum',
+                active && 'border-gold bg-gold text-plum',
                 !done && !active && 'border-line-strong text-ink-soft',
               )}
             >

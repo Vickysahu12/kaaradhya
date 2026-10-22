@@ -53,7 +53,7 @@ function SavedItem({ product: p, index, onMove, onRemove }) {
               setSize(s)
               setError(false)
             }}
-            className={cn('h-8 rounded-[12px] text-[12px] font-semibold transition-colors', size === s ? 'bg-gold text-paper' : 'hover:bg-studio')}
+            className={cn('h-8 rounded-[12px] text-[12px] font-semibold transition-colors', size === s ? 'bg-gold text-plum' : 'hover:bg-studio')}
           >
             {s}
           </button>

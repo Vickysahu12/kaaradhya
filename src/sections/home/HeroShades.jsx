@@ -37,7 +37,7 @@ function HeroSearch() {
       }}
       className="group relative flex h-14 w-full max-w-[460px] items-center rounded-full border border-line-strong bg-paper pr-1.5 pl-5 shadow-[0_10px_30px_-22px_rgb(43_34_24/0.5)] transition-[border-color,box-shadow] duration-300 focus-within:border-gold focus-within:shadow-[0_0_0_4px_rgb(140_109_51/0.14)]"
     >
-      <Icon name="search" size={20} className="shrink-0 text-ink-soft transition-colors group-focus-within:text-gold" />
+      <Icon name="search" size={20} className="shrink-0 text-ink-soft transition-colors group-focus-within:text-gold-deep" />
       <label htmlFor="hero-q" className="sr-only">
         Search kurtis
       </label>
@@ -52,7 +52,7 @@ function HeroSearch() {
           </AnimatePresence>
         </span>
       )}
-      <button type="submit" aria-label="Search" className="press grid size-11 shrink-0 place-items-center rounded-full bg-gold text-paper transition-colors hover:bg-ink">
+      <button type="submit" aria-label="Search" className="press grid size-11 shrink-0 place-items-center rounded-full bg-gold text-plum transition-colors hover:bg-ink">
         <Icon name="arrow" size={18} />
       </button>
     </form>
@@ -97,11 +97,11 @@ export function HeroShades() {
       <div className="shell grid items-center gap-6 pt-8 lg:min-h-[clamp(640px,calc(100svh-116px),860px)] lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-4 lg:pt-0">
         {/* Words */}
         <div className="relative z-10 lg:pb-10">
-          <p className="hand text-[24px] text-gold">your week, sorted</p>
+          <p className="hand text-[24px] text-gold-deep">your week, sorted</p>
           <h1 id="hero-title" className="display mt-2 text-[38px] leading-[1.08] text-ink sm:text-[54px] lg:text-[clamp(50px,4.9vw,74px)]">
             Everyday kurtis,
             <br />
-            on <span className="swash text-gold">repeat.</span>
+            on <span className="swash text-gold-deep">repeat.</span>
           </h1>
           <p className="mt-6 max-w-[40ch] text-[16.5px] leading-relaxed text-ink-soft">Soft cotton, one perfect cut, ten shades. Wear a different one every day of the week, from ₹499.</p>
           <div className="mt-8">
@@ -157,7 +157,7 @@ export function HeroShades() {
           </div>
 
           {/* The planner note, written in the margin */}
-          <div className="pointer-events-none absolute top-[30%] left-[2%] hidden text-gold sm:block" aria-hidden="true">
+          <div className="pointer-events-none absolute top-[30%] left-[2%] hidden text-gold-deep sm:block" aria-hidden="true">
             <AnimatePresence mode="wait" initial={false}>
               <motion.p key={shade.name} className="hand text-[30px]" initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
                 {shade.day ? `${shade.day} → ${shade.name}` : `+ ${shade.name}`}

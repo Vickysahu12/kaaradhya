@@ -28,7 +28,7 @@ export function ProductRail({ title, products, id }) {
               type="button"
               onClick={() => scroll(d)}
               aria-label={label}
-              className="press grid size-12 place-items-center rounded-full bg-paper text-ink transition-colors hover:bg-gold hover:text-paper"
+              className="press grid size-12 place-items-center rounded-full bg-paper text-ink transition-colors hover:bg-gold hover:text-plum"
             >
               <Icon name={icon} size={16} />
             </button>

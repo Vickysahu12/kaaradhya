@@ -10,7 +10,7 @@ export function FreeShippingBar({ subtotal }) {
   return (
     <div className="rounded-[12px] bg-champagne px-4 py-3">
       <p className="flex items-center gap-2 text-[13px]">
-        <Icon name="truck" size={18} className="text-gold" />
+        <Icon name="truck" size={18} className="text-gold-deep" />
         {remaining > 0 ? (
           <span>
             Add <strong className="font-medium text-ink">{formatPrice(remaining)}</strong> more for free shipping

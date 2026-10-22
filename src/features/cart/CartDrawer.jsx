@@ -45,7 +45,7 @@ export function CartDrawer() {
     >
       {items.length === 0 ? (
         <div className="flex flex-1 flex-col items-center justify-center px-10 pb-16 text-center">
-          <span className="grid size-20 place-items-center rounded-full bg-studio text-gold">
+          <span className="grid size-20 place-items-center rounded-full bg-studio text-gold-deep">
             <Icon name="bag" size={28} />
           </span>
           <p className="display mt-5 text-[28px] text-ink">Your bag is empty</p>

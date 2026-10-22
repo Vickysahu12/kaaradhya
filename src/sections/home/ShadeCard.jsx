@@ -42,7 +42,7 @@ export function ShadeCard() {
                 <span className="block truncate text-[15px] font-semibold text-ink">{active.name}</span>
                 <span className="block text-[13px] text-ink-soft tabular-nums">{formatPrice(active.price)}</span>
               </span>
-              <span className="grid size-11 shrink-0 place-items-center rounded-full bg-ink text-paper transition-colors group-hover:bg-gold">
+              <span className="grid size-11 shrink-0 place-items-center rounded-full bg-ink text-paper transition-colors group-hover:bg-gold group-hover:text-plum">
                 <Icon name="arrow" size={18} />
               </span>
             </Link>
@@ -50,7 +50,7 @@ export function ShadeCard() {
         </div>
 
         <div>
-          <p className="hand text-[26px] text-gold">one cut, {shades.length} shades</p>
+          <p className="hand text-[26px] text-gold-deep">one cut, {shades.length} shades</p>
           <h2 id="shade-title" className="display mt-2 text-[34px] text-ink sm:text-[38px] lg:text-[44px]">
             The Classic Kurta shade card
           </h2>

@@ -15,7 +15,7 @@ export function SectionHeading({ title, italic, sub, link, id, className, align 
         {italic && (
           <>
             {' '}
-            <span className={cn('hand text-[1.12em] normal-case', light ? 'text-champagne' : 'text-gold')}>{italic}</span>
+            <span className={cn('hand text-[1.12em] normal-case', light ? 'text-champagne' : 'text-gold-deep')}>{italic}</span>
           </>
         )}
       </h2>

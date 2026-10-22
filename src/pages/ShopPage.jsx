@@ -75,7 +75,7 @@ export function ShopPage() {
                 key={c.label}
                 to={c.to}
                 aria-current={on ? 'page' : undefined}
-                className={cn('press flex h-10 shrink-0 items-center rounded-[12px] px-5 text-[14px] font-semibold transition-colors', on ? 'bg-gold text-paper' : 'bg-paper hover:bg-mist')}
+                className={cn('press flex h-10 shrink-0 items-center rounded-[12px] px-5 text-[14px] font-semibold transition-colors', on ? 'bg-gold text-plum' : 'bg-paper hover:bg-mist')}
               >
                 {c.label}
               </Link>
@@ -110,7 +110,7 @@ export function ShopPage() {
             >
               <Icon name="filter" size={16} /> Filter
               {activeCount > 0 && (
-                <span className="grid size-5 place-items-center rounded-full bg-gold text-[11px] font-bold text-paper">{activeCount}</span>
+                <span className="grid size-5 place-items-center rounded-full bg-gold text-[11px] font-bold text-plum">{activeCount}</span>
               )}
             </button>
             <p className="hidden text-[13px] text-ink-soft lg:block">
@@ -143,7 +143,7 @@ export function ShopPage() {
 
           {products.length === 0 ? (
             <div className="flex flex-col items-center py-24 text-center">
-              <span className="grid size-20 place-items-center rounded-full bg-paper text-gold"><Icon name="search" size={34} weight="bold" /></span>
+              <span className="grid size-20 place-items-center rounded-full bg-paper text-gold-deep"><Icon name="search" size={34} weight="bold" /></span>
               <p className="display mt-5 text-[30px] text-ink">Nothing matches these filters</p>
               <p className="mt-2 max-w-[36ch] text-[14px] text-ink-soft">Try removing a filter or two, or browse the full collection.</p>
               <Button onClick={clearAll} variant="outline" className="mt-6">

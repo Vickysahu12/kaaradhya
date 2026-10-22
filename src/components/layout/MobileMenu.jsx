@@ -77,7 +77,7 @@ export function MobileMenu({ open, onClose }) {
                       role="tab"
                       aria-selected={on}
                       onClick={() => setTab(m.id)}
-                      className={cn('relative h-10 rounded-full text-[14px] font-semibold transition-colors duration-300', on ? 'text-paper' : 'text-ink')}
+                      className={cn('relative h-10 rounded-full text-[14px] font-semibold transition-colors duration-300', on ? 'text-plum' : 'text-ink')}
                     >
                       {on && (
                         <motion.span
@@ -137,12 +137,12 @@ export function MobileMenu({ open, onClose }) {
                     <li key={a.label}>
                       {a.to ? (
                         <Link to={a.to} onClick={onClose} className={cls}>
-                          <Icon name={a.icon} size={22} className="text-gold" />
+                          <Icon name={a.icon} size={22} className="text-gold-deep" />
                           {a.label}
                         </Link>
                       ) : (
                         <a href={a.href} className={cls}>
-                          <Icon name={a.icon} size={22} className="text-gold" />
+                          <Icon name={a.icon} size={22} className="text-gold-deep" />
                           {a.label}
                         </a>
                       )}
@@ -152,10 +152,10 @@ export function MobileMenu({ open, onClose }) {
               </ul>
             </div>
 
-            <div className="flex items-center justify-between gap-3 bg-gold px-4 pt-3.5 pb-[max(14px,env(safe-area-inset-bottom))] text-paper">
+            <div className="flex items-center justify-between gap-3 bg-plum px-4 pt-3.5 pb-[max(14px,env(safe-area-inset-bottom))] text-champagne">
               <span className="text-[14px] font-medium">
                 Extra 10% off
-                <span className="block text-[12px] font-normal text-paper/70">Use it at checkout</span>
+                <span className="block text-[12px] font-normal text-champagne/70">Use it at checkout</span>
               </span>
               <CopyCode code="EVERYDAY10" light />
             </div>
